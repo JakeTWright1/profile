@@ -1,81 +1,153 @@
-@media (max-width: 900px){
-  .container{
-    width: 700px
-  }
-}
-
-.card-blue {
-  background-color: #e9d8a6;
-  color: azure;
-  box-shadow: 4px 3px 30px black;
-  text-align: center;
-  padding: 15px;
-  margin: 20px;
-  border: 2px solid #bb3e03;
-}
-
-.header{
-  text-align: center;
-  background-color: #bb3e03;
-  width: 700px;
-}
-
-.img-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 0 auto;
-}
-
 body {
-  background-color: #9b2226;
-}
-
-h1, h2 {
-  font-family: 'Oswald', sans-serif;
-  color: #ee9b00;
-}
-
-p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  color: #9b2226;
-}
-
-body{
-  line-height: 50px;
-}
-
-.link {
-  color: #ca6702;
-  text-decoration: none;
-}
-
-.link:hover {
-  color:crimson;
-}
-
-#navigation > li > a {
-  font-size: 100px;
-  letter-spacing: 10px;
-  color: #0a9396;
-}
-
-#navigation > li > a:hover{
-  color: #005f73;
-}
-
-li {
-  display: inline;
-}
-
-
-ul {
-  padding: 0;
+  background-color: #e3d1a3;
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .container {
-  width: 700px;
+  background-color: #e3d1a3;
+  height: 100%;
   margin: 0 auto;
+  box-shadow: 3px 3px 8px #4A4435;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(images/krisztian-tabori-nZGNVOvEYio-unsplash.jpg);
+  background-size: cover;
+}
+
+.profile-image{
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.avatar:hover {
+  transform: translate(0, -15px);
+}
+
+.avatar {
+  height: 190px;
+  width: 190px;
+  border-radius: 16%;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.grid-container {
+  display: flex;
+  column-gap: 10px;
+  height: 60%;
+  width: 65%;
+  z-index: 0;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  position: fixed;
+  float: left;
+  left: 8%;
+  top: 20%;
+  align-items: center;
+}
+
+.grid-item {
+  background-color: red;
+  margin: 0 5px;
+  border-radius: 16px;
+  width: 150px;
+  height: 90%;
+  position: relative;
+  transition: 0.5s;
+}
+
+.grid-item:hover {
+  transform: scale(1.2);
+  width: 80%;
+  opacity: 0.9;
+  z-index: 5;
+  }
+
+.grid-item:hover .grid-title {
+  visibility: hidden;
+  }
+
+#welcome-item {
+  background-image: url(images/szabo-viktor-vE1As8YoJRs-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#portfolio-item {
+  background-image: url(images/markus-spiske-GDP_CXFHiuI-unsplash.jpg);
+  background-size: cover;
+}
+
+#about-item {
+  background-image: url(images/simone-secci-49uySSA678U-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#interests-item {
+  background-image: url(images/serhii-tyaglovsky-U2Ug1A6tQew-unsplash.jpg);
+  background-size: cover;
+}
+.grid-title {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.intro-text {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.profile-info {
+  margin: 5px 5px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.extra-info {
+  background-color: blue;
+  margin: 5px 5px;
+  width: 50%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.name {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 29px;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  color: black;
+}
+
+.title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 29px;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: rgb(255, 255, 255);
+  z-index: 3;
+}
+
+.vert {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
