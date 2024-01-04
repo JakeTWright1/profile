@@ -68,6 +68,37 @@ body {
   font-size: 15px;
   font-weight: 100;
   text-shadow: 2px 2px 6px black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.inner-text::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin: 5px 2px;
+  border-radius: 16px;
+  margin-left: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .grid-item:hover {
@@ -163,7 +194,60 @@ h1 {
   z-index: 3;
 }
 
-.vert {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
+.info-tag {
+  margin-bottom: -10px;
+  text-shadow: 1px 1px 8px black;
+}
+
+.film-grid {
+  display: flex;
+  width: 95%;
+}
+
+.film-grid div {
+  object-fit:cover;
+}
+
+.film-image{
+  height: 300px;
+  width: 100%;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stalker-img {
+  background-image: url(images/Stalker.jpg);
+  background-size: contain;
+  z-index: 4;
+  background-repeat: no-repeat;
+}
+
+#la-notte-img {
+  background-image: url(images/la\ notte.jpg);
+  background-size: contain;
+  z-index: 4;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+#sansho-img {
+  background-image: url(images/sansho.jpg);
+  background-size: contain;
+  z-index: 4;
+  background-repeat: no-repeat;
+}
+
+#dragon-img {
+  background-image: url(images/dragon.jpg);
+  background-size: contain;
+  z-index: 4;
+  background-repeat: no-repeat;
+}
+
+.film-info {
+  font-size: 12px;
+  margin-top: 10px;
 }
