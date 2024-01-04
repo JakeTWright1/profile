@@ -244,12 +244,20 @@ h1 {
   justify-content: center;
 }
 
+rd:link:hover {
+  opacity: 0.7;
+}
+
+rd:visited:hover {
+  opacity: 0.7;
+}
+
 .rd:link {
   color: white;
   padding: 8px;
   text-decoration: none;
   border-radius: 16px;
-  background-color: lightblue;
+  background-color: rgb(45, 96, 224);
 }
 
 .rd:visited {
@@ -258,4 +266,8 @@ h1 {
   text-decoration: none;
   border-radius: 18px;
   background-color: purple;
+}
+
+a:hover {
+  opacity: 0.7;
 }
