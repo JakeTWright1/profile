@@ -208,9 +208,9 @@ h1 {
   object-fit:cover;
 }
 
-.film-image{
-  height: 300px;
-  width: 100%;
+.film-image {
+  width: 33.3%;
+  height: 100%;
   margin: 5px 5px;
   display: flex;
   flex-direction: column;
@@ -218,36 +218,35 @@ h1 {
   align-items: center;
 }
 
-#stalker-img {
-  background-image: url(images/Stalker.jpg);
-  background-size: contain;
-  z-index: 4;
-  background-repeat: no-repeat;
+.film-image img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
-#la-notte-img {
-  background-image: url(images/la\ notte.jpg);
-  background-size: contain;
-  z-index: 4;
-  object-fit: fill;
-  background-repeat: no-repeat;
-}
-
-#sansho-img {
-  background-image: url(images/sansho.jpg);
-  background-size: contain;
-  z-index: 4;
-  background-repeat: no-repeat;
-}
-
-#dragon-img {
-  background-image: url(images/dragon.jpg);
-  background-size: contain;
-  z-index: 4;
-  background-repeat: no-repeat;
+.film-image:hover {
+  opacity: 0.7;
 }
 
 .film-info {
   font-size: 12px;
   margin-top: 10px;
+}
+
+.fa-goodreads, .fa-linkedin {
+  font-size: 40px;
+  color: white;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: pink;
 }
